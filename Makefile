@@ -40,13 +40,6 @@ vcs:
 	vcs    $(VCS_UVMC_OPTS) $(CV_LOPTS) $(TOP) $(CV_LOPTS) $(OCT_LOPTS) external.o
 	./simv $(VCS_SIMV) +UVM_VERBOSITY=MEDIUM
 
-vcs_oct:
-	g++ -c $(CV_COPTS) external.cpp
-	syscan $(VCS_UVMC_SC_OPTS) -cflags $(OCT_COPTS) $(VCS_UVMC_SC_OPTS) $(REFMOD).cpp 
-	vlogan $(VCS_UVMC_SV_OPTS) $(TOP).sv
-	vcs    $(VCS_UVMC_OPTS) $(CV_LOPTS) $(TOP) $(CV_LOPTS) $(OCT_LOPTS) external.o
-	./simv $(VCS_SIMV) +UVM_VERBOSITY=MEDIUM
-
 clean:
 	rm -rf a.out *.o # simulation output file
 	rm -rf INCA_libs irun.log ncsc.log # ius
