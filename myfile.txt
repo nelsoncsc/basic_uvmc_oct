@@ -1,0 +1,10 @@
+trans/dir1/tr01.txt
+trans/dir1/tr02.txt
+trans/dir1/tr03.txt
+trans/dir1/tr04.txt
+trans/dir1/tr05.txt
+trans/dir2/tr06.txt
+trans/dir2/tr07.txt
+trans/dir2/tr08.txt
+trans/dir2/tr09.txt
+trans/dir2/tr10.txt
